@@ -8,14 +8,10 @@ function component() {
     const element = document.createElement('div');
     element.className = "window-div";
 
-    const borderControl = document.createElement('div');
-    borderControl.className = 'border-control';
-
     const pageContainer = document.createElement('div');
     pageContainer.className = 'page-container';
 
-    element.appendChild(borderControl)
-    borderControl.appendChild(pageContainer);
+    element.appendChild(pageContainer);
 
     const WelcomeImage = new Image();
     WelcomeImage.src = WelcomeLeft;
