@@ -3,11 +3,45 @@
     padding: 0;
 }
 
-.header-image{
+.window-div{
     width: 100vw;
-    height: 400px;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.page-container{
+    width: 1200px;
+    height: 800px;
+    margin-top: 3vh;
+    border: 30px solid #C38F3E;
+    background-color: #7e382f;
+    border-radius: 120px 0px 120px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-image{
+    height: 800px;
     object-fit: cover;
-    object-position: 0 19%;
-    border-radius: 0px 105px 0px 105px;
+    object-position: 0 25%;
+    z-index: 2;
+    border-radius: 90px 0px 0px 0px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.scan-lines{
+    height: 100vw;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 20%;
+}
+
+body{
+    background-color: #000;
 }
 
