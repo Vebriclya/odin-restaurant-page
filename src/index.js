@@ -34,11 +34,11 @@ function component() {
     // Nav Bar Links
     const homeLink = document.createElement('div');
     homeLink.className = 'nav-bar-link';
-    homeLink.innerHTML = "HOME";
+    homeLink.innerHTML = '<a href=' + '>HOME</a>';
     navBar.appendChild(homeLink);
     const menuLink = document.createElement('div');
     menuLink.className = 'nav-bar-link';
-    menuLink.innerHTML = "MENU";
+    menuLink.innerHTML = '<a href=' + '>MENU</a>';
     navBar.appendChild(menuLink);
     const contactLink = document.createElement('div');
     contactLink.className = 'nav-bar-link';

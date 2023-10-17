@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const GoogleFontsPlugin = require('google-fonts-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -13,11 +12,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Neelix\'s Galactic Grill',
         }),
-        new GoogleFontsPlugin({
-            fonts: [
-                {family: 'Antonio', variants: ['400', '500', '600', '700']}
-            ]
-        })
     ],
     output: {
         filename: '[name].bundle.js',
@@ -38,17 +32,9 @@ module.exports = {
                 type: 'asset/resource',
             },
             {
-                test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
-                use: [
-                  {
-                    loader: 'file-loader',
-                    options: {
-                      name: '[name].[ext]',
-                      outputPath: 'fonts/'
-                    }
-                  }
-                ]
-              }
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+              },
         ],
     },
 };
