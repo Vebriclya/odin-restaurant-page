@@ -135,6 +135,14 @@ a:visited{
     pointer-events: none;
 }
 
+.text-area{
+    position: absolute;
+    font-size: 28px;
+    grid-row: 2;
+    left: 240px;
+    right: 20px;
+}
+
 body{
     background-color: #000;
 }
