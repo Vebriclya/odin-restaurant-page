@@ -1,3 +1,4 @@
-const contactPage = () => textArea.innerHTML = '<br><br><b>testing testing testing';
-
-export default contactPage;
+export function contactPage() {
+    const textArea = document.querySelector('.text-area');
+    textArea.innerHTML = 'testing testing testing';
+}

@@ -3,6 +3,10 @@ import WelcomeLeft from './neeliximg.png';
 import Logo from './logo.png';
 import ScanLines from './scan-7133901_1920.png';
 import _ from 'lodash';
+import { homePage } from './home.js';
+import { contactPage } from './contact.js';
+import { menuPage } from './menu.js';
+
 
 
 function component() {
@@ -44,17 +48,34 @@ function component() {
     contentContainer.appendChild(navBar);
 
     // Nav Bar Links
+    //HOME
     const homeLink = document.createElement('div');
     homeLink.className = 'nav-bar-link';
     homeLink.innerHTML = '<a href=' + '>HOME</a>';
+    homeLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        homePage();
+    });
     navBar.appendChild(homeLink);
+
+    // MENU
     const menuLink = document.createElement('div');
     menuLink.className = 'nav-bar-link';
     menuLink.innerHTML = '<a href=' + '>MENU</a>';
+    menuLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        menuPage();
+    });
     navBar.appendChild(menuLink);
+
+    // CONTACT
     const contactLink = document.createElement('div');
     contactLink.className = 'nav-bar-link';
     contactLink.innerHTML = '<a href=' + '>CONTACT</a>';
+    contactLink.addEventListener('click', (event) => {
+        event.preventDefault();
+        contactPage();
+    });
     navBar.appendChild(contactLink);
     
     // Text Container

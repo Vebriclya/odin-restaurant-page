@@ -1,3 +1,4 @@
-const menuPage = () => textArea.innerHTML = '<br><br><b>testing2 testing2 testing2';
-
-export default menuPage;
+export function menuPage() {
+    const textArea = document.querySelector('.text-area');
+    textArea.innerHTML = 'testing2 testing2 testing2';
+}
