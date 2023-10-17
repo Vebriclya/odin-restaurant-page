@@ -1,5 +1,6 @@
 import './style.css';
 import WelcomeLeft from './neeliximg.png';
+import Logo from './logo.png';
 import ScanLines from './scan-7133901_1920.png';
 import _ from 'lodash';
 
@@ -19,6 +20,12 @@ function component() {
     WelcomeImage.src = WelcomeLeft;
     WelcomeImage.className = "welcome-image";
     pageContainer.appendChild(WelcomeImage);
+
+    // Here's his logo
+    const SpinningLogo = new Image();
+    SpinningLogo.src = Logo;
+    SpinningLogo.className = "spinning-logo";
+    pageContainer.appendChild(SpinningLogo);
 
     // Scan Lines
     const ScanLineOverlay = new Image();

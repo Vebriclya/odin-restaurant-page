@@ -70,6 +70,19 @@ a:visited{
     overflow: hidden;
 }
 
+.spinning-logo{
+    width: 280px;
+    position: absolute;
+    object-position: 0;
+    z-index: 4;
+    left: 0px;
+    top: 20px;
+    /* filter: brightness(0) saturate(100%) invert(29%) sepia(8%) saturate(3541%) hue-rotate(258deg) brightness(90%) contrast(78%); /* PURPLE */ 
+    filter: invert(57%) sepia(50%) saturate(544%) hue-rotate(358deg) brightness(95%) contrast(84%); /* YELLOW */
+    /* filter: invert(24%) sepia(6%) saturate(5589%) hue-rotate(318deg) brightness(105%) contrast(93%);/* RED */
+    animation: rotation 20s infinite linear;
+}
+
 .welcome-image{
     height: 800px;
     object-fit: cover;
@@ -126,3 +139,11 @@ body{
     background-color: #000;
 }
 
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
