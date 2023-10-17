@@ -1,4 +1,38 @@
+/* antonio-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/antonio-v19-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* antonio-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/antonio-v19-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* antonio-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/antonio-v19-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* antonio-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Antonio';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/antonio-v19-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 * {
+    font-family: 'Antonio';
     margin: 0;
     padding: 0;
 }
@@ -25,20 +59,40 @@
     height: 800px;
     object-fit: cover;
     object-position: 0 25%;
-    z-index: 2;
+    z-index: 3;
     border-radius: 90px 0px 0px 0px;
     position: relative;
     left: 0px;
     top: 0px;
 }
 
+.nav-bar{
+    width: 784px;
+    height: 80px;
+    background-color: #C38F3E;
+    position: absolute;
+    z-index: 1;
+    left: 417px;
+    top: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav-bar-link{
+    font-family: 'Antonio';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .scan-lines{
     height: 100vw;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     left: 0px;
     top: 0px;
-    opacity: 20%;
+    opacity: 10%;
+    pointer-events: none;
 }
 
 body{
