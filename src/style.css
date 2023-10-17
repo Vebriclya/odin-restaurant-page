@@ -170,9 +170,23 @@ body{
     font-size: 35px;
 }
 
+.menu-items{
+    font-size: 33px;
+}
+
 .menu-divider{
     border: none;
     border-top: 3px solid #000;
+}
+
+.neelix-special{
+    font-size: 40px;
+    color: #C38F3E;
+    animation: wiggle 20s infinite linear;
+}
+
+.contact-details{
+    font-size: 28px;
 }
 
 @keyframes rotation {
@@ -182,4 +196,12 @@ body{
     to {
       transform: rotate(359deg);
     }
+  }
+
+@keyframes wiggle {
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
   }
