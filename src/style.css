@@ -138,14 +138,25 @@ a:visited{
 .text-area{
     position: absolute;
     font-size: 28px;
+    max-height: 100%;
     grid-row: 2;
     left: 240px;
     right: 20px;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body{
     background-color: #000;
+}
+
+.menu-headers{
+    font-size: 35px;
+}
+
+.menu-divider{
+    border: none;
+    border-top: 3px solid #000;
 }
 
 @keyframes rotation {
