@@ -64,6 +64,8 @@ a:visited{
     border: 30px solid #C38F3E;
     background-color: #7e382f;
     border-radius: 120px 0px 120px 0px;
+    outline: 5px solid black;
+    outline-offset: -30px;
     position: relative;
     overflow: hidden;
 }
@@ -80,16 +82,27 @@ a:visited{
     pointer-events: none;
 }
 
-.nav-bar{
+.content-container{
     width: 784px;
-    height: 80px;
-    background-color: #C38F3E;
+    height: 800px;
     position: absolute;
     z-index: 1;
     left: 417px;
     top: 0px;
     display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.nav-bar{
+    width: 784px;
+    height: 80px;
+    background-color: #C38F3E;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border-bottom: 5px solid black;
 }
 
 .nav-bar-link{

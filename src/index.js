@@ -26,10 +26,15 @@ function component() {
     ScanLineOverlay.className = 'scan-lines';
     pageContainer.appendChild(ScanLineOverlay);
 
+    // Container for actual content
+    const contentContainer = document.createElement('div');
+    contentContainer.className = 'content-container';
+    pageContainer.appendChild(contentContainer);
+
     // Nav Bar
     const navBar = document.createElement('div');
     navBar.className =  'nav-bar';
-    pageContainer.appendChild(navBar);
+    contentContainer.appendChild(navBar);
 
     // Nav Bar Links
     const homeLink = document.createElement('div');
