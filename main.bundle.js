@@ -17973,7 +17973,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function homePage() {
     const textArea = document.querySelector('.text-area');
-    textArea.innerHTML = '<br><b class="menu-headers">Hello, my friends from across the stars!</b> <br><br> Neelix here, your one and only Talaxian culinary genius and host extraordinaire. <br><br> If there\'s one thing I\'ve learned from my adventures aboard the U.S.S. Voyager, it\'s that food has the power to bring people together, no matter where they come from. <br><br> That\'s why I\'m delighted to welcome you to <b>\"Neelix\'s Nebula Bistro,\"</b> the galaxy\'s most exciting and diverse culinary destination.';
+    textArea.innerHTML = '<br><b class="menu-headers">Hello, my friends from across the stars!</b> <br><br> Neelix here, your one and only Talaxian culinary genius and host extraordinaire. <br><br> If there\'s one thing I\'ve learned from my adventures aboard the U.S.S. Voyager, it\'s that food has the power to bring people together, no matter where they come from. <br><br> That\'s why I\'m delighted to welcome you to <b>\"Neelix\'s Galactic Grill,\"</b> the galaxy\'s most exciting and diverse culinary destination.';
 }
 
 /***/ }),
@@ -18078,7 +18078,7 @@ function component() {
     // Text Container
     const textArea = document.createElement('div');
     textArea.className = "text-area";
-    textArea.innerHTML = '<br><b class="menu-headers">Hello, my friends from across the stars!</b> <br><br> Neelix here, your one and only Talaxian culinary genius and host extraordinaire. <br><br> If there\'s one thing I\'ve learned from my adventures aboard the U.S.S. Voyager, it\'s that food has the power to bring people together, no matter where they come from. <br><br> That\'s why I\'m delighted to welcome you to <b>\"Neelix\'s Nebula Bistro,\"</b> the galaxy\'s most exciting and diverse culinary destination.';
+    textArea.innerHTML = '<br><b class="menu-headers">Hello, my friends from across the stars!</b> <br><br> Neelix here, your one and only Talaxian culinary genius and host extraordinaire. <br><br> If there\'s one thing I\'ve learned from my adventures aboard the U.S.S. Voyager, it\'s that food has the power to bring people together, no matter where they come from. <br><br> That\'s why I\'m delighted to welcome you to <b>\"Neelix\'s Galactic Grill,\"</b> the galaxy\'s most exciting and diverse culinary destination.';
     contentContainer.appendChild(textArea);
 
 
